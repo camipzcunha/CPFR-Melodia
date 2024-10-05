@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.div-hero-img {
+  background-image: url("../img/Fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nav-header nav {
+  padding: 20px 0;
+  background-color: whitesmoke;
+}
+.nav-header nav ul {
+  background-color: transparent;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav-header nav ul li a:hover {
+  color: #d0cdcb;
+}
+
+/*# sourceMappingURL=style.css.map */
