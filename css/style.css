@@ -1,42 +1,34 @@
-html, body {
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.div-hero-img {
-  background-image: url("../img/Fundo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
   height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   position: relative;
+  background-color: #060309;
 }
 
-.nav-header nav {
-  padding: 20px 0;
-  background-color: whitesmoke;
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
 }
-.nav-header nav ul {
-  background-color: transparent;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
+
+svg {
+  width: 100%;
 }
-.nav-header nav ul li a {
-  color: white;
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
   text-decoration: none;
-  font-size: 14px;
-}
-.nav-header nav ul li a:hover {
-  color: #d0cdcb;
 }
 
 /*# sourceMappingURL=style.css.map */
