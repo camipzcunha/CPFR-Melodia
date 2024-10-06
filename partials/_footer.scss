@@ -1,0 +1,37 @@
+.footer {
+  background-image: linear-gradient(to left, $purple-primary, $purple-tertiary);
+  color: $white-normal;
+  height: 12vh;
+  padding-top: 2vh;
+
+  .icons {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    i {
+      margin: 0 1rem;
+    }
+  }
+  p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 18vh;
+
+    .icons {
+      font-size: 25px;
+      i {
+        margin: 0 0.5rem;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}

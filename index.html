@@ -1,142 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="scss/style.css"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Melodia - sua forma, sua música</title>
-</head>
-<body>
-    
-   <div class="bg-home">
-    <header>
+  </head>
+  <body>
+    <div class="bg-home">
+      <header>
         <nav class="header-content container">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Benefícios</a></li>
-                <li><a href="#">Funcionalidades</a></li>
-                <li><a href="#">Testemunhos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">Benefícios</a></li>
+            <li><a href="#function">Funcionalidades</a></li>
+            <li><a href="#testimonials">Testemunhos</a></li>
+            <li><a href="#contacts-redes">Contato</a></li>
+          </ul>
 
-            <div>
-                <a href="" class="header-button">
-                    Web Player
-                </a>
-            </div>
+          <div>
+            <a href="" class="header-button"> Web Player </a>
+          </div>
         </nav>
         <main class="hero container">
-            <h1>Melodia</h1>
-            <p>Sua forma. Sua música.</p>
-            <a href="" class="hero-button" target="_blank">Baixar App</a>
+          <h1>Melodia</h1>
+          <p>Sua forma. Sua música.</p>
+          <a href="" class="hero-button" target="_blank">Baixar App</a>
         </main>
-    </header>
-   </div>
+      </header>
+    </div>
 
-   <section class="about">
-         <div class="about-content container">
-              <div class="about-text">
-                <h2>Por que o Melodia?</h2>
-                <p>Veja nossos benefícios:</p>
-              </div>
-                <div class="about-items">
-                    <div class="first">
-                        <i class="fa-solid fa-music"></i>
-                        <h3>Personalização</h3>
-                        <p>Personalize suas playlists de acordo com seu humor, atividade ou gênero musical.</p>
-                    </div>
-
-                    <div class="second">
-                        <i class="fa-solid fa-headphones"></i>
-                        <h3>Escute offline</h3>
-                        <p>Escute suas músicas favoritas sem precisar de internet.</p>
-                    </div>
-
-                    <div class="third">
-                        <i class="fa-solid fa-people-arrows"></i>
-                        <h3>Compartilhe</h3>
-                        <p>Compartilhe suas playlists com seus amigos e familiares.</p>
-                    </div>
-
-                    <div class="fourth">
-                        <i class="fa-regular fa-bell"></i>
-                        <h3>Novidades</h3>
-                        <p>Receba notificações sobre novos lançamentos e atualizações.</p>
-                    </div>
-                </div>
+    <section id="about" class="about">
+      <div class="about-content container">
+        <div class="about-text">
+          <h2>Por que o Melodia?</h2>
+          <p>Veja nossos benefícios:</p>
         </div>
-   </section>
+        <div class="about-items">
+          <div class="first">
+            <i class="fa-solid fa-music"></i>
+            <h3>Personalização</h3>
+            <p>
+              Personalize suas playlists de acordo com seu humor, atividade ou
+              gênero musical.
+            </p>
+          </div>
 
-   <section class="function">
-   
-    <div class="func-items container">
+          <div class="second">
+            <i class="fa-solid fa-headphones"></i>
+            <h3>Escute offline</h3>
+            <p>Escute suas músicas favoritas sem precisar de internet.</p>
+          </div>
+
+          <div class="third">
+            <i class="fa-solid fa-people-arrows"></i>
+            <h3>Compartilhe</h3>
+            <p>Compartilhe suas playlists com seus amigos e familiares.</p>
+          </div>
+
+          <div class="fourth">
+            <i class="fa-regular fa-bell"></i>
+            <h3>Novidades</h3>
+            <p>Receba notificações sobre novos lançamentos e atualizações.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="function" class="function">
+      <div class="func-items container">
         <div class="func-text">
-            <h3>Nossas</h3>
-            <h2>Funcionalidades</h2>
+          <h3>Nossas</h3>
+          <h2>Funcionalidades</h2>
         </div>
         <div class="func-item">
-            <p>Ajuste a qualidade do áudio de acordo com sua conexão de internet ou preferências pessoais.</p>
-        </div>
-
-        <div class="func-item">
-            <p> Acesse shows ao vivo e faixas exclusivas de artistas.</p>
-        </div>
-
-        <div class="func-item">
-            <p>Veja as capas dos álbuns e as letras das músicas enquanto ouve.</p>
+          <p>
+            Ajuste a qualidade do áudio de acordo com sua conexão de internet ou
+            preferências pessoais.
+          </p>
         </div>
 
         <div class="func-item">
-            <p>Receba recomendações de músicas e playlists personalizadas.</p>
+          <p>Acesse shows ao vivo e faixas exclusivas de artistas.</p>
         </div>
 
         <div class="func-item">
-            <p>Escute suas músicas favoritas em qualquer dispositivo.</p>
+          <p>Veja as capas dos álbuns e as letras das músicas enquanto ouve.</p>
         </div>
-    </div>
 
-    <div class="func-img">
-        <img src="assets/func.png" alt="Garota escutando música">
-    </div>
-</section>
+        <div class="func-item">
+          <p>Receba recomendações de músicas e playlists personalizadas.</p>
+        </div>
 
-<section class="testimonials">
-    <div class="testimonials-content container">
+        <div class="func-item">
+          <p>Escute suas músicas favoritas em qualquer dispositivo.</p>
+        </div>
+      </div>
+
+      <div class="func-img">
+        <img src="assets/func.png" alt="Garota escutando música" />
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="testimonials-content container">
         <h2>Testemunhos</h2>
         <div class="testimonial-items">
-            <div class="testimonial-item">
-                <p>"A melhor experiência que já tive com uma plataforma de música!"</p>
-                <h4>- Ana Silva</h4>
-            </div>
-            <div class="testimonial-item">
-                <p>"Adoro as funcionalidades de personalização, faz toda a diferença!"</p>
-                <h4>- João Pereira</h4>
-            </div>
-            <div class="testimonial-item">
-                <p>"Escutar músicas offline é um sonho que se tornou realidade!"</p>
-                <h4>- Maria Oliveira</h4>
-            </div>
-            <div class="testimonial-item">
-                <p>"As playlists são sempre atualizadas com as melhores músicas!"</p>
-                <h4>- Carlos Souza</h4>
-            </div>
-            <div class="testimonial-item">
-                <p>"O suporte é incrível, sempre pronto para ajudar!"</p>
-                <h4>- Fernanda Lima</h4>
-            </div>
-            <div class="testimonial-item">
-                <p>"Recomendo para todos os meus amigos, é fantástico!"</p>
-                <h4>- Rafael Mendes</h4>
-            </div>
+          <div class="testimonial-item">
+            <p>
+              "A melhor experiência que já tive com uma plataforma de música!"
+            </p>
+            <h4>- Ana Silva</h4>
+          </div>
+          <div class="testimonial-item">
+            <p>
+              "Adoro as funcionalidades de personalização, faz toda a
+              diferença!"
+            </p>
+            <h4>- João Pereira</h4>
+          </div>
+          <div class="testimonial-item">
+            <p>"Escutar músicas offline é um sonho que se tornou realidade!"</p>
+            <h4>- Maria Oliveira</h4>
+          </div>
+          <div class="testimonial-item">
+            <p>
+              "As playlists são sempre atualizadas com as melhores músicas!"
+            </p>
+            <h4>- Carlos Souza</h4>
+          </div>
+          <div class="testimonial-item">
+            <p>"O suporte é incrível, sempre pronto para ajudar!"</p>
+            <h4>- Fernanda Lima</h4>
+          </div>
+          <div class="testimonial-item">
+            <p>"Recomendo para todos os meus amigos, é fantástico!"</p>
+            <h4>- Rafael Mendes</h4>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <section id="contacts-redes" class="contacts-redes">
+      <div class="contacts-content">
+        <h2>Entre em contato</h2>
+        <form action="#" method="post">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Seu nome"
+            required
+          />
 
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Seu e-mail"
+            required
+          />
 
-</body>
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            placeholder="Sua mensagem"
+            required
+          ></textarea>
+
+          <button type="submit" value="Enviar">Enviar</button>
+        </form>
+      </div>
+      <div class="redes-content">
+        <h2>Redes Sociais</h2>
+        <ul>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+              @TheIcersCompany
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+              @TheIcersCompany
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+              @TheIcersCompany
+            </a>
+          </li>
+          <li>
+            <a href="mailto:theicers@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              theicers@gmail.com
+            </a>
+          </li>
+        </ul>
+        <!-- <img src="./assets/contacts.png" alt="foto1" /> -->
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <p>Copyright © 2024. Designed by TheIcers</p>
+    </footer>
+  </body>
 </html>

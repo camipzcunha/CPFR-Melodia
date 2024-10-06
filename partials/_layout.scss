@@ -1,363 +1,364 @@
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .bg-home {
-    position: relative;
+  position: relative;
 }
 
 .bg-home::before {
-    content: '';
-    position: absolute;
-    display: block;
-    background-image: linear-gradient(to bottom, rgba(22, 6, 30, 0.031), #0603099e), url("../assets/Hero2.png");
-    left: 0;
-    top: 9;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.9;
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(22, 6, 30, 0.031),
+      #0603099e
+    ),
+    url("../assets/Hero2.png");
+  left: 0;
+  top: 9;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
 
-    @media screen and (max-width: 768px) {
-        opacity: 0.4;
-        
-    }
+  @media screen and (max-width: 768px) {
+    opacity: 0.4;
+  }
 }
 
 .hero {
-    color: $white-light;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end; // Alinha o conteúdo à direita
-    padding: 14px;
-    text-align: center;
-    margin-right: 5rem;
+  color: $white-light;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; // Alinha o conteúdo à direita
+  padding: 14px;
+  text-align: center;
+  margin-right: 5rem;
 
-    h1 {
-        line-height: 150%;
-        max-width: 940px;
-        font-size: 6rem;
-        text-align: right; // Alinha o texto do título à direita
+  h1 {
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 6rem;
+    text-align: right; // Alinha o texto do título à direita
+  }
+
+  p {
+    margin: 14px 0;
+    text-align: right;
+    font-size: 1.5rem;
+  }
+
+  .hero-button {
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $purple-primary;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+
+    &:hover {
+      background-color: $purple-secondary;
+      animation: scaleButton 0.8s alternate infinite;
     }
 
-    p {
-        margin: 14px 0;
-        text-align: right;
-        font-size: 1.5rem;
-    
+    @keyframes scaleButton {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(1.07);
+      }
     }
-
-    .hero-button {
-        padding: 14px 28px;
-        color: $white-normal;
-        background-color: $purple-primary;
-        border: 0;
-        font-size: 18px;
-        font-weight: 600;
-        margin: 14px 0;
-
-        &:hover {
-            background-color: $purple-secondary;
-            animation: scaleButton 0.8s alternate infinite;
-        }
-
-        @keyframes scaleButton{
-            from{
-                transform: scale(1);
-            }
-
-            to{
-                transform: scale(1.07);
-            }
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .hero {
-        min-height: 60vh;
-        align-items: center; // Centraliza o texto no mobile
-        text-align: center; // Centraliza o texto no mobile
-        margin: auto;
-    
+  .hero {
+    min-height: 60vh;
+    align-items: center; // Centraliza o texto no mobile
+    text-align: center; // Centraliza o texto no mobile
+    margin: auto;
 
-        h1, p {
-            text-align: center; // Garante que o texto fique centralizado no mobile
-        }
-
-        h1{
-            font-size: 3rem;
-            padding: 0 14px;
-            width: 100%;
-        }
-
-        p{
-            font-size: 1rem;
-            padding: 0 14px;
-            width: 100%;
-        }
-
-        .hero-button {
-            margin: 14px 0;
-            font-size: 0.9rem;
-        }
-
-       
+    h1,
+    p {
+      text-align: center; // Garante que o texto fique centralizado no mobile
     }
+
+    h1 {
+      font-size: 3rem;
+      padding: 0 14px;
+      width: 100%;
+    }
+
+    p {
+      font-size: 1rem;
+      padding: 0 14px;
+      width: 100%;
+    }
+
+    .hero-button {
+      margin: 14px 0;
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .about {
-    padding: 3rem 0;
+  padding: 3rem 0;
 
-
-    .about-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-  
-      .about-text {
-        margin-bottom: 2rem;
-        line-height: 150%;
-        margin-top: 4rem;
-  
-        h2 {
-          font-size: 2.5rem;
-          color: $white-light;
-          line-height: 150%;
-        }
-  
-        p {
-          font-size: 1rem;
-          color: $white-light;
-          margin-top: 2rem;
-        }
-      }
-  
-      .about-items {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px; // Espaço entre os itens
-  
-        .first {
-          background-color: $purple-primary; // Cor do primeiro card
-        }
-  
-        .second {
-          background-color: $purple-secondary; // Cor do segundo card
-        }
-  
-        .third {
-          background-color: $purple-tertiary; // Cor do terceiro card
-        }
-  
-        .fourth {
-          background-color: $purple-quaternary; // Cor do quarto card
-        }
-  
-        .first, .second, .third, .fourth {
-          flex: 1;
-          padding: 20px;
-          border-radius: 20px;
-          text-align: center;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s ease;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-  
-          &:hover {
-            transform: translateY(-10px); // Efeito ao passar o mouse
-          }
-  
-          i {
-            font-size: 2.5rem;
-            color: $white-normal; // Cor do ícone para contraste com o fundo
-            margin-bottom: 1rem;
-          }
-  
-          h3 {
-            font-size: 1.5rem;
-            color: $white-light; // Cor do texto para contraste
-            margin-bottom: 1rem;
-          }
-  
-          p {
-            font-size: 1rem;
-            color: $white-light; // Cor do texto para contraste
-            max-width: 250px;
-          }
-        }
-      }
-    }
-  
-    @media screen and (max-width: 768px) {
-      .about-items {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-  
-        // Esconder os parágrafos nos cards
-        .first p,
-        .second p,
-        .third p,
-        .fourth p {
-          display: none;
-        }
-  
-        // Ajustar o tamanho do título e ícones
-        .first h3, 
-        .second h3, 
-        .third h3, 
-        .fourth h3 {
-          font-size: 1.2rem; // Tamanho menor para o h3
-        }
-  
-        .first i,
-        .second i,
-        .third i,
-        .fourth i {
-          font-size: 1.8rem; // Tamanho menor para o ícone
-        }
-  
-        // Ajustar o tamanho e o layout dos cards
-        .first, 
-        .second, 
-        .third, 
-        .fourth {
-          width: 80%;  // Cards menores, em formato de linha
-          padding: 10px;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-  
-          i {
-            margin-bottom: 0; // Remover margem inferior dos ícones
-          }
-  
-          h3 {
-            margin-left: 10px; // Espaço entre ícone e título
-          }
-        }
-      }
-    }
-  }
-  .function {
-    background-color: $white-light; 
-    padding: 3rem 0; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start;
-  
-    .func-text {
-      text-align: left; 
-      
-  
-      h3, h2 {
-        color: $purple-primary; // Cor dos títulos
-      }
-
-        h2 {
-            font-size: 3rem; // Tamanho do título
-            margin-bottom: 1rem; // Espaçamento inferior
-        }
-
-
-    }
-  
-    .func-img {
-      img {
-        width: 100%;
-        height: auto; 
-        max-width: 400px; 
-      }
-    }
-  
-    .func-items {
-      display: flex; 
-      flex-direction: column; 
-      gap: 1rem; 
-      margin-top: 2rem; 
-  
-      .func-item {
-        background: $boxes-color; // Gradiente de cores;
-        padding: 1rem; // Espaçamento interno
-        border-radius: 8px; // Bordas arredondadas
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra para destaque
-        color: $white-light; // Cor do texto dentro dos cards
-      }
-    }
-  
-    @media screen and (max-width: 768px) {
-      flex-direction: column; // Mudar a direção do layout para coluna
-  
-      .func-img {
-        display: none; // Esconder a imagem em telas menores
-      }
-  
-      .func-text {
-        margin: 0; // Remover a margem lateral no mobile
-        text-align: center; // Centralizar o texto
-      }
-  
-      .func-items {
-        gap: 0.5rem; // Reduzir o espaço entre os cards
-      }
-    }
-  }
-
-  .testimonials {
-    padding: 3rem 0;
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 
-    h2 {
-        font-size: 2rem;
-        color: $whitebg;
-        margin-bottom: 2rem;
+    .about-text {
+      margin-bottom: 2rem;
+      line-height: 150%;
+      margin-top: 4rem;
+
+      h2 {
+        font-size: 2.5rem;
+        color: $white-light;
+        line-height: 150%;
+      }
+
+      p {
+        font-size: 1rem;
+        color: $white-light;
+        margin-top: 2rem;
+      }
     }
 
-    .testimonial-items {
-        display: grid; // Usando grid para organizar os itens
-        grid-template-columns: repeat(3, 1fr); // 3 colunas
-        gap: 20px; // Espaço entre os itens
-        justify-items: center; // Centraliza os itens dentro das colunas
+    .about-items {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px; // Espaço entre os itens
 
-        .testimonial-item {
-            background: $boxes-color; // Cor de fundo do card
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(203, 194, 194, 0.1);
-            width: 100%; // Largura 100% para preencher a coluna
-            max-width: 300px; // Largura máxima dos cards
-            transition: transform 0.3s ease;
+      .first {
+        background-color: $purple-primary; // Cor do primeiro card
+      }
 
-            p {
-                font-size: 1rem;
-                color: $white-light; // Cor do texto
-                margin-bottom: 1rem;
-            }
+      .second {
+        background-color: $purple-secondary; // Cor do segundo card
+      }
 
-            h4 {
-                font-size: 1rem;
-                color: $white-normal; // Cor do nome do usuário
-                font-weight: 600; // Aumenta a espessura do texto
-            }
+      .third {
+        background-color: $purple-tertiary; // Cor do terceiro card
+      }
 
-            &:hover {
-                transform: translateY(-5px); // Efeito ao passar o mouse
-            }
+      .fourth {
+        background-color: $purple-quaternary; // Cor do quarto card
+      }
+
+      .first,
+      .second,
+      .third,
+      .fourth {
+        flex: 1;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+          transform: translateY(-10px); // Efeito ao passar o mouse
         }
+
+        i {
+          font-size: 2.5rem;
+          color: $white-normal; // Cor do ícone para contraste com o fundo
+          margin-bottom: 1rem;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          color: $white-light; // Cor do texto para contraste
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          color: $white-light; // Cor do texto para contraste
+          max-width: 250px;
+        }
+      }
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-items {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+
+      // Esconder os parágrafos nos cards
+      .first p,
+      .second p,
+      .third p,
+      .fourth p {
+        display: none;
+      }
+
+      // Ajustar o tamanho do título e ícones
+      .first h3,
+      .second h3,
+      .third h3,
+      .fourth h3 {
+        font-size: 1.2rem; // Tamanho menor para o h3
+      }
+
+      .first i,
+      .second i,
+      .third i,
+      .fourth i {
+        font-size: 1.8rem; // Tamanho menor para o ícone
+      }
+
+      // Ajustar o tamanho e o layout dos cards
+      .first,
+      .second,
+      .third,
+      .fourth {
+        width: 80%; // Cards menores, em formato de linha
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+          margin-bottom: 0; // Remover margem inferior dos ícones
+        }
+
+        h3 {
+          margin-left: 10px; // Espaço entre ícone e título
+        }
+      }
+    }
+  }
+}
+.function {
+  background-color: $white-light;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .func-text {
+    text-align: left;
+
+    h3,
+    h2 {
+      color: $purple-primary; // Cor dos títulos
+    }
+
+    h2 {
+      font-size: 3rem; // Tamanho do título
+      margin-bottom: 1rem; // Espaçamento inferior
+    }
+  }
+
+  .func-img {
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 400px;
+    }
+  }
+
+  .func-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .func-item {
+      background: $boxes-color; // Gradiente de cores;
+      padding: 1rem; // Espaçamento interno
+      border-radius: 8px; // Bordas arredondadas
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra para destaque
+      color: $white-light; // Cor do texto dentro dos cards
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column; // Mudar a direção do layout para coluna
+
+    .func-img {
+      display: none; // Esconder a imagem em telas menores
+    }
+
+    .func-text {
+      margin: 0; // Remover a margem lateral no mobile
+      text-align: center; // Centralizar o texto
+    }
+
+    .func-items {
+      gap: 0.5rem; // Reduzir o espaço entre os cards
+    }
+  }
+}
+
+.testimonials {
+  padding: 3rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    color: $whitebg;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial-items {
+    display: grid; // Usando grid para organizar os itens
+    grid-template-columns: repeat(3, 1fr); // 3 colunas
+    gap: 20px; // Espaço entre os itens
+    justify-items: center; // Centraliza os itens dentro das colunas
+
+    .testimonial-item {
+      background: $boxes-color; // Cor de fundo do card
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(203, 194, 194, 0.1);
+      width: 100%; // Largura 100% para preencher a coluna
+      max-width: 300px; // Largura máxima dos cards
+      transition: transform 0.3s ease;
+
+      p {
+        font-size: 1rem;
+        color: $white-light; // Cor do texto
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+        color: $white-normal; // Cor do nome do usuário
+        font-weight: 600; // Aumenta a espessura do texto
+      }
+
+      &:hover {
+        transform: translateY(-5px); // Efeito ao passar o mouse
+      }
+    }
+  }
 }
 
 // Responsividade
 @media screen and (max-width: 768px) {
-    .testimonial-items {
-        grid-template-columns: 1fr; // Muda para 1 coluna em telas menores
-    }
+  .testimonial-items {
+    grid-template-columns: 1fr; // Muda para 1 coluna em telas menores
+  }
 }

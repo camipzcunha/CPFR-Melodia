@@ -1,0 +1,134 @@
+.contacts-redes {
+  display: flex;
+  flex-direction: row;
+  background-color: $whitebg;
+  margin: 2rem 15rem;
+  padding: 4%;
+  border-radius: 15px;
+
+  .contacts-content {
+    width: 55%;
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    form {
+      margin-top: 1rem;
+      label {
+        display: block;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+      input {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+        border: none;
+        background-color: $grey;
+        width: 80%;
+        height: 5vh;
+        padding-left: 0.5vw;
+        border-radius: 5px;
+      }
+      textarea {
+        font-size: 1.3rem;
+        margin-top: 0.5rem;
+        border: none;
+        background-color: $grey;
+        width: 80%;
+        padding-top: 0.5vw;
+        padding-left: 0.5vw;
+        border-radius: 5px;
+      }
+      button {
+        display: block;
+        margin-top: 1rem;
+        background-color: $purple-secondary;
+        color: $white-normal;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .redes-content {
+    h2 {
+      font-size: 2.2rem;
+    }
+    ul {
+      margin-top: 2rem;
+      list-style-type: none;
+
+      li {
+        margin-top: 1rem;
+
+        a {
+          font-size: 21px;
+          display: flex;
+          align-items: center;
+          color: $secondary-normal;
+          i {
+            font-size: 40px;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+    img {
+      position: absolute;
+      width: 30vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-redes {
+    flex-direction: column;
+    margin: 5em;
+    padding: 4%;
+  }
+
+  .contacts-content,
+  .redes-content {
+    h2 {
+      font-size: 1px;
+    }
+    width: 90%;
+  }
+
+  .contacts-content form input,
+  .contacts-content form textarea {
+    width: 100%;
+  }
+
+  .redes-content img {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts-redes {
+    margin: 2rem;
+  }
+
+  .contacts-content form {
+    width: 90vw;
+  }
+
+  .contacts-content h2,
+  .redes-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .contacts-content form input,
+  .contacts-content form textarea {
+    font-size: 1rem;
+  }
+  .contacts-content form button {
+    margin-bottom: 2rem;
+  }
+  .redes-content ul li a {
+    font-size: 18px;
+  }
+}

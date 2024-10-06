@@ -1,6 +1,6 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   outline: none;
 }
@@ -8,30 +8,32 @@
 @import "../partials/colors";
 @import "../partials/header";
 @import "../partials/layout";
+@import "../partials/contacts";
+@import "../partials/footer";
 
-body{
-  font-family: 'Sora', sans-serif;
-  width: 100%;
+body {
+  font-family: "Sora", sans-serif;
+  width: 100vw;
   height: 100vh;
   position: relative;
   background-color: #060309;
+  overflow-x: hidden;
 }
 
-button{
+button {
   font-family: "Sora", sans-serif;
   cursor: pointer;
 }
 
-svg{
+svg {
   width: 100%;
 }
 
-img{
+img {
   width: 100%;
 }
 
-a{
+a {
   cursor: pointer;
   text-decoration: none;
 }
-
